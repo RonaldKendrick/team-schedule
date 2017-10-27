@@ -1,0 +1,77 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #9b0303;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+table {
+ border-collapse: collapse;
+}
+
+caption {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+thead {
+
+}
+
+tbody {
+
+}
+
+tr {
+
+}
+
+tr.win {
+  background-color: #52ea63;
+}
+
+tr.loss {
+  background-color: #d62f2f;
+
+}
+
+th {
+  background-color: #740003;
+  color: #000000;
+  padding: 7px;
+}
+
+td {
+  padding: 7px;
+}
+
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    border: 1px solid #740003;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  td {
+    display: block;
+  }
+
+  td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+}
